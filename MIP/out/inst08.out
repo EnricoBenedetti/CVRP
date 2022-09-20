@@ -1,0 +1,94 @@
+['savings-mzt.py', 'inst08.png']
+Heuristic solution: [[111, 130, 20, 78, 98, 137, 131, 2, 30, 48, 107, 76, 136], [31, 100, 58, 60, 94, 89, 86, 95, 67, 70, 79, 117, 6, 87], [64, 83, 21, 36, 124, 52, 112, 14, 105, 138, 85, 1, 62], [66, 93, 141, 84, 80, 116, 82, 27, 29, 57, 96, 101, 25, 63, 34], [104, 10, 35, 42, 128, 113, 103, 51, 118, 18, 4, 110, 26, 120, 9, 143, 49, 69, 12, 142], [74, 140, 106, 133, 109, 28, 102, 122, 7, 73, 39, 47, 11], [90, 61, 22, 16, 38, 8, 50, 23, 97, 129, 40, 53, 114, 13, 127], [3, 5, 139, 134, 121, 119, 126, 88, 37, 32, 91, 33, 45, 108, 68], [72, 99, 71, 17, 75, 44, 123, 115, 54, 59], [24, 46, 135, 56, 41, 92, 55, 81, 43], [65, 132, 19, 77, 125, 15]]
+Heuristic val: 2880.0
+11 <= 11 <= 20
+200 <= 200
+200 <= 200
+200 <= 200
+199 <= 200
+199 <= 200
+194 <= 195
+194 <= 195
+194 <= 195
+158 <= 190
+147 <= 190
+100 <= 190
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-07-23
+Set parameter TimeLimit to value 300
+Waiting for optimizer...
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 281061 rows, 229812 columns and 2117434 nonzeros
+Model fingerprint: 0x079ddd06
+Variable types: 143 continuous, 229669 integer (229669 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+03]
+  Objective range  [1e+00, 3e+02]
+  Bounds range     [1e+00, 4e+03]
+  RHS range        [1e+00, 4e+03]
+
+Warning: Completing partial solution with 229515 unfixed non-continuous variables out of 229669
+User MIP start produced solution with objective 1444 (0.78s)
+Loaded user MIP start with objective 1444
+
+Presolve removed 44077 rows and 1584 columns (presolve time = 5s) ...
+Presolve removed 44077 rows and 1584 columns
+Presolve time: 5.77s
+Presolved: 236984 rows, 228228 columns, 1354496 nonzeros
+Variable types: 143 continuous, 228085 integer (228085 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.3450920e+03   1.469674e+03   4.117127e+10      8s
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.495000e+02, 4720 iterations, 1.80 seconds (1.16 work units)
+Total elapsed time = 10.19s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  449.50000    0  302 1444.00000  449.50000  68.9%     -   13s
+     0     0  449.50000    0  437 1444.00000  449.50000  68.9%     -   26s
+H    0     0                    1397.0000000  449.50000  67.8%     -   52s
+     0     0  449.50000    0  457 1397.00000  449.50000  67.8%     -   54s
+     0     0  449.50000    0  347 1397.00000  449.50000  67.8%     -   76s
+H    0     0                    1382.0000000  449.50000  67.5%     -  136s
+     0     0  449.50000    0  359 1382.00000  449.50000  67.5%     -  138s
+     0     0  449.50000    0  339 1382.00000  449.50000  67.5%     -  157s
+     0     0  449.50000    0  361 1382.00000  449.50000  67.5%     -  160s
+     0     0  449.50000    0  350 1382.00000  449.50000  67.5%     -  179s
+     0     0  449.50000    0  440 1382.00000  449.50000  67.5%     -  183s
+     0     0  449.50000    0  349 1382.00000  449.50000  67.5%     -  203s
+H    0     0                    1370.0000000  449.50000  67.2%     -  300s
+
+Cutting planes:
+  Gomory: 2
+  Implied bound: 15
+  Clique: 303
+  MIR: 28
+  Zero half: 25
+  RLT: 52
+  Relax-and-lift: 19
+  BQP: 38
+  PSD: 2
+
+Explored 1 nodes (62651 simplex iterations) in 300.07 seconds (424.42 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 1370 1382 1397 1444 
+
+Time limit reached
+Best objective 1.370000000000e+03, best bound 4.500000000000e+02, gap 67.1533%
+Done waiting!
+MIP improvement: [[0, 111, 20, 78, 130, 98, 137, 131, 30, 2, 48, 107, 76, 136, 0], [0, 31, 100, 58, 60, 94, 95, 86, 89, 67, 70, 79, 117, 6, 87, 0], [0, 85, 1, 64, 83, 21, 36, 124, 52, 138, 112, 14, 105, 62, 0], [0, 66, 93, 141, 116, 82, 27, 80, 84, 29, 57, 96, 101, 25, 63, 34, 0], [0, 104, 10, 35, 42, 128, 113, 103, 51, 118, 18, 4, 110, 26, 120, 9, 143, 49, 69, 12, 142, 0], [0, 74, 140, 106, 133, 109, 102, 28, 122, 7, 73, 39, 47, 11, 0], [0, 90, 61, 22, 16, 38, 8, 50, 23, 97, 127, 129, 40, 53, 114, 13, 0], [0, 5, 139, 134, 121, 119, 126, 88, 37, 32, 91, 33, 45, 108, 68, 15, 0], [0, 99, 71, 17, 75, 44, 123, 115, 54, 59, 0], [0, 24, 46, 135, 56, 41, 92, 55, 81, 43, 72, 0], [0, 65, 132, 19, 3, 77, 125, 0]]
+MIP value: 2846
+The solution could be better...

@@ -1,0 +1,96 @@
+['savings-mzt.py', 'inst03.png']
+Heuristic solution: [[92, 120, 54, 76, 116, 49, 98, 55, 67, 85, 57, 36, 61, 111, 34, 125, 83, 115, 101, 105, 56, 8, 117], [15, 97, 2, 64, 137, 142, 131, 9, 89, 140, 47, 136, 60, 113, 38, 20, 103], [12, 112, 10, 127, 121, 88, 52, 40, 69, 119, 110, 27, 114, 31, 143], [43, 86, 16, 18, 123, 128, 65, 21, 66, 96, 99, 130, 23, 84, 106], [134, 77, 30, 7, 90, 53, 82, 59, 29, 93, 33, 126], [91, 45, 129, 133, 73, 14, 80, 3, 139, 132, 13, 1, 95, 26, 62, 17, 39], [46, 51, 6, 4, 75, 37, 24, 135, 70, 79, 100, 72, 74, 141, 50, 19, 108], [41, 118, 42, 44, 124, 94, 48, 102, 32, 81, 122, 138], [5, 28, 35, 11, 71, 107, 109, 87, 78], [63, 104, 22, 25, 68, 58]]
+Heuristic val: 2880.0
+9 <= 10 <= 20
+200 <= 200
+200 <= 200
+199 <= 200
+198 <= 200
+197 <= 200
+193 <= 195
+189 <= 195
+174 <= 190
+138 <= 190
+77 <= 190
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-07-23
+Set parameter TimeLimit to value 300
+Waiting for optimizer...
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 253599 rows, 208933 columns and 1919233 nonzeros
+Model fingerprint: 0xe5667f30
+Variable types: 143 continuous, 208790 integer (208790 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+03]
+  Objective range  [1e+00, 3e+02]
+  Bounds range     [1e+00, 4e+03]
+  RHS range        [1e+00, 4e+03]
+
+Warning: Completing partial solution with 208637 unfixed non-continuous variables out of 208790
+User MIP start produced solution with objective 1206 (0.71s)
+Loaded user MIP start with objective 1206
+
+Presolve removed 37210 rows and 1440 columns (presolve time = 5s) ...
+Presolve removed 37210 rows and 1440 columns
+Presolve time: 5.14s
+Presolved: 216389 rows, 207493 columns, 1231373 nonzeros
+Variable types: 143 continuous, 207350 integer (207350 binary)
+
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing first log only...
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    1.3841760e+03   1.368973e+03   4.121557e+10      7s
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 4.090000e+02, 4678 iterations, 1.73 seconds (1.14 work units)
+Total elapsed time = 10.30s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  409.00000    0  358 1206.00000  409.00000  66.1%     -   11s
+     0     0  409.00000    0  429 1206.00000  409.00000  66.1%     -   21s
+H    0     0                    1202.0000000  409.00000  66.0%     -   36s
+     0     0  409.00000    0  526 1202.00000  409.00000  66.0%     -   38s
+     0     0  409.00000    0  380 1202.00000  409.00000  66.0%     -   58s
+H    0     0                    1190.0000000  409.00000  65.6%     -  107s
+     0     0  409.00000    0  401 1190.00000  409.00000  65.6%     -  108s
+     0     0  409.00000    0  526 1190.00000  409.00000  65.6%     -  122s
+     0     0  409.00000    0  522 1190.00000  409.00000  65.6%     -  125s
+     0     0  409.00000    0  578 1190.00000  409.00000  65.6%     -  141s
+     0     0  409.00000    0  571 1190.00000  409.00000  65.6%     -  145s
+     0     0  409.00000    0  336 1190.00000  409.00000  65.6%     -  162s
+H    0     0                    1158.0000000  409.00000  64.7%     -  292s
+     0     0  409.00000    0  451 1158.00000  409.00000  64.7%     -  294s
+     0     0          -    0      1158.00000  409.00000  64.7%     -  300s
+
+Cutting planes:
+  Gomory: 3
+  Implied bound: 79
+  Clique: 531
+  MIR: 843
+  StrongCG: 2
+  Zero half: 44
+  RLT: 185
+  Relax-and-lift: 159
+  BQP: 110
+  PSD: 25
+
+Explored 1 nodes (37835 simplex iterations) in 300.02 seconds (417.60 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 1158 1190 1202 1206 
+
+Time limit reached
+Best objective 1.158000000000e+03, best bound 4.090000000000e+02, gap 64.6805%
+Done waiting!
+MIP improvement: [[0, 92, 120, 54, 76, 116, 49, 98, 55, 67, 85, 57, 36, 61, 111, 34, 125, 83, 115, 105, 101, 56, 8, 117, 0], [0, 15, 97, 64, 137, 2, 142, 131, 9, 89, 140, 47, 60, 136, 113, 38, 20, 103, 0], [0, 12, 112, 10, 127, 121, 88, 52, 40, 69, 119, 110, 27, 114, 31, 143, 0], [0, 43, 86, 16, 18, 123, 128, 65, 21, 66, 96, 99, 130, 23, 84, 106, 0], [0, 134, 77, 30, 7, 90, 53, 82, 29, 59, 93, 33, 126, 0], [0, 91, 45, 129, 133, 73, 14, 80, 3, 139, 132, 13, 95, 1, 26, 62, 17, 39, 0], [0, 46, 51, 6, 75, 4, 37, 24, 135, 70, 79, 100, 72, 50, 74, 141, 19, 108, 0], [0, 28, 41, 118, 42, 44, 124, 94, 48, 102, 32, 122, 81, 138, 0], [0, 5, 35, 11, 71, 107, 109, 87, 78, 0], [0, 63, 104, 22, 25, 68, 58, 0]]
+MIP value: 2840
+The solution could be better...

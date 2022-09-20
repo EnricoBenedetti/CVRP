@@ -1,0 +1,108 @@
+['savings-mzt.py', 'inst04.png']
+Heuristic solution: [[61, 156, 191, 118, 126, 75, 166, 48, 179, 103, 146, 184, 78, 102, 43, 114, 26, 100], [80, 95, 60, 2, 30, 172, 21, 35, 76, 181, 5, 117], [82, 104, 9, 177, 50, 15, 189, 153, 90, 18, 161, 180], [10, 98, 36, 168, 187, 52, 160, 53, 64, 24, 134, 130, 139, 16, 34], [173, 137, 3, 157, 145, 59, 129, 97, 19, 109, 167, 39, 47, 93], [79, 125, 178, 58, 128, 133, 107, 11, 111, 55, 159, 127, 85, 132, 162], [70, 72, 74, 7, 81, 150, 110, 142, 116, 183, 46, 57, 122, 108, 25, 149, 73, 123], [112, 119, 87, 92, 37, 17, 185, 44, 8, 175, 96, 169, 6, 29, 54, 136, 84, 28], [68, 71, 121, 67, 56, 42, 141, 32, 65, 165, 89], [63, 49, 124, 83, 94, 41, 144, 163, 143, 164, 88, 151, 51, 182, 101, 33, 171], [23, 45, 170, 158, 4, 120, 1, 86, 40, 20, 105, 147, 31, 140], [135, 190, 38, 188, 155, 176, 131, 174, 13, 12, 152], [27, 113, 62, 77, 22, 69, 99, 115, 154, 148], [91, 186, 14, 66, 106, 138]]
+Heuristic val: 3370.0
+14 <= 14 <= 20
+194 <= 195
+193 <= 195
+190 <= 190
+190 <= 190
+190 <= 190
+188 <= 190
+186 <= 190
+183 <= 185
+183 <= 185
+182 <= 185
+182 <= 185
+178 <= 185
+121 <= 185
+112 <= 180
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-07-23
+Set parameter TimeLimit to value 300
+Waiting for optimizer...
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 622935 rows, 518961 columns and 4786693 nonzeros
+Model fingerprint: 0xa29ba9c2
+Variable types: 191 continuous, 518770 integer (518770 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+03]
+  Objective range  [1e+00, 3e+02]
+  Bounds range     [1e+00, 4e+03]
+  RHS range        [1e+00, 4e+03]
+
+Warning: Completing partial solution with 518565 unfixed non-continuous variables out of 518770
+User MIP start produced solution with objective 1675 (1.86s)
+Loaded user MIP start with objective 1675
+Processed MIP start in 1.86 seconds (1.16 work units)
+
+Presolve removed 85773 rows and 2688 columns (presolve time = 5s) ...
+Presolve removed 90958 rows and 2688 columns (presolve time = 12s) ...
+Presolve removed 90958 rows and 2688 columns
+Presolve time: 13.75s
+Presolved: 531977 rows, 516273 columns, 3072617 nonzeros
+Variable types: 191 continuous, 516082 integer (516082 binary)
+
+Deterministic concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 1.29s
+
+Barrier statistics:
+ Dense cols : 191
+ AA' NZ     : 6.251e+05
+ Factor NZ  : 2.579e+06 (roughly 100 MB of memory)
+ Factor Ops : 1.726e+09 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.65227078e+10 -2.01237460e+05  8.38e+04 0.00e+00  9.77e+04    21s
+   1   2.18972262e+09 -4.88201570e+08  1.17e+04 1.10e-10  1.45e+04    22s
+
+Barrier performed 1 iterations in 21.64 seconds (22.69 work units)
+Barrier solve interrupted - model solved by another algorithm
+
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root relaxation: objective 5.345000e+02, 7711 iterations, 4.41 seconds (3.14 work units)
+Total elapsed time = 26.88s
+Total elapsed time = 31.84s
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  534.50000    0  415 1675.00000  534.50000  68.1%     -   34s
+     0     0  534.50000    0  617 1675.00000  534.50000  68.1%     -   74s
+H    0     0                    1664.0000000  534.50000  67.9%     -  146s
+     0     0  534.50000    0  618 1664.00000  534.50000  67.9%     -  153s
+     0     0  534.50000    0  639 1664.00000  534.50000  67.9%     -  211s
+H    0     0                    1650.0000000  534.50000  67.6%     - 11649s
+
+Cutting planes:
+  Gomory: 7
+  Lift-and-project: 5
+  Implied bound: 71
+  Clique: 170
+  MIR: 35
+  Zero half: 28
+  RLT: 92
+  Relax-and-lift: 23
+  BQP: 21
+  PSD: 2
+
+Explored 1 nodes (29441 simplex iterations) in 11649.10 seconds (315.33 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 1650 1664 1675 
+
+Time limit reached
+Best objective 1.650000000000e+03, best bound 5.350000000000e+02, gap 67.5758%
+Done waiting!
+MIP improvement: [[0, 61, 156, 191, 118, 126, 75, 166, 48, 179, 103, 146, 184, 78, 102, 43, 114, 26, 100, 0], [0, 70, 80, 95, 60, 2, 30, 172, 21, 35, 76, 181, 5, 117, 0], [0, 82, 104, 9, 177, 50, 15, 189, 153, 90, 18, 161, 180, 0], [0, 10, 98, 36, 168, 187, 52, 160, 53, 64, 24, 134, 130, 139, 16, 34, 0], [0, 173, 137, 3, 157, 145, 59, 129, 97, 19, 109, 167, 39, 47, 93, 0], [0, 79, 125, 178, 58, 128, 133, 107, 11, 111, 55, 159, 127, 85, 132, 162, 0], [0, 72, 74, 7, 81, 150, 110, 25, 142, 116, 183, 46, 57, 122, 108, 73, 149, 123, 0], [0, 112, 119, 87, 92, 17, 185, 44, 37, 8, 175, 96, 169, 6, 29, 54, 136, 84, 28, 0], [0, 68, 71, 121, 67, 56, 42, 141, 32, 65, 165, 89, 0], [0, 63, 49, 124, 83, 94, 41, 144, 163, 143, 164, 88, 151, 51, 182, 101, 33, 171, 0], [0, 23, 45, 170, 158, 4, 120, 86, 1, 105, 20, 40, 147, 31, 140, 0], [0, 135, 190, 38, 188, 155, 176, 131, 174, 13, 12, 152, 0], [0, 27, 113, 62, 77, 22, 69, 99, 115, 154, 148, 0], [0, 91, 186, 14, 66, 106, 138, 0]]
+MIP value: 3352
+The solution could be better...

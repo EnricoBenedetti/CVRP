@@ -1,0 +1,133 @@
+['savings-mzt.py', 'inst06.png']
+Heuristic solution: [[278, 230, 124, 201, 132, 271, 214, 6, 93, 164, 161, 22, 45, 21, 108, 12, 98], [53, 233, 260, 283, 115, 32, 31, 79, 4, 92, 222, 157, 240, 89, 71, 85, 235, 27, 171], [102, 252, 195, 129, 246, 47, 163, 1, 154, 37, 192, 141, 189, 9, 244, 178, 207, 208], [120, 186, 263, 48, 258, 43, 70, 158, 142, 119, 275, 110, 136, 59, 104], [62, 183, 239, 227, 61, 10, 51, 187, 5, 35, 193, 257, 24, 226, 56, 94, 7, 206, 63, 174], [91, 287, 197, 34, 149, 212, 42, 68, 80, 159, 286, 205, 103], [78, 216, 116, 14, 228, 139, 81, 167, 106, 19, 267, 166, 88, 175], [276, 41, 112, 140, 213, 147, 248, 169, 131, 90, 8, 69, 277], [184, 242, 231, 255, 152, 254, 269, 262, 284, 217, 173, 3], [107, 191, 274, 65, 237, 2, 96, 126, 57, 23, 64, 40, 209, 58], [77, 220, 194, 256, 25, 266, 224, 44, 185, 251, 218, 160, 265], [127, 249, 188, 133, 223, 151, 250, 73, 181, 211, 145, 83, 168], [268, 101, 198, 148, 135, 272, 282, 38, 177, 114, 176, 190], [18, 82, 203, 155, 170, 50, 134, 113, 13, 234, 236], [125, 253, 264, 39, 172, 60, 72, 200, 105, 243, 20, 261, 273, 150, 28], [16, 238, 29, 219, 46, 196, 162, 241, 52, 259, 225, 199, 26, 123, 36, 97], [118, 153, 109, 111, 247, 67, 49, 117, 11, 285, 86, 281, 180], [66, 179, 156, 100, 245, 221, 17, 146, 54, 204, 15, 165, 202, 144, 280, 75], [74, 87, 270, 279, 229, 138, 130, 210, 95, 55, 99], [84, 215, 33, 30, 121, 128, 182, 122, 143, 76, 137], [232]]
+Heuristic val: 4444.0
+20 <= 21 <= 20
+192 <= 195
+191 <= 195
+190 <= 190
+189 <= 190
+189 <= 190
+189 <= 190
+187 <= 190
+185 <= 185
+185 <= 185
+184 <= 185
+183 <= 185
+181 <= 185
+181 <= 185
+180 <= 180
+179 <= 180
+178 <= 180
+177 <= 180
+175 <= 180
+167 <= 175
+166 <= 175
+17 <= -1
+HEURISTICS FAILED TO DELIVER FEASIBLE WARM START!
+Terrible solution incoming, as if there was no heuristic at all..
+Set parameter Username
+Academic license - for non-commercial use only - expires 2023-07-23
+Set parameter TimeLimit to value 300
+Waiting for optimizer...
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (linux64)
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+Optimize a model with 1958895 rows, 1664907 columns and 15372067 nonzeros
+Model fingerprint: 0xdda6a0ae
+Variable types: 287 continuous, 1664620 integer (1664620 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 4e+03]
+  Objective range  [1e+00, 3e+02]
+  Bounds range     [1e+00, 4e+03]
+  RHS range        [1e+00, 4e+03]
+
+Warning: Completing partial solution with 1664314 unfixed non-continuous variables out of 1664620
+User MIP start did not produce a new incumbent solution
+Processed MIP start in 4.45 seconds (2.25 work units)
+
+Presolve removed 12587 rows and 5760 columns (presolve time = 6s) ...
+Presolve removed 12587 rows and 5760 columns (presolve time = 10s) ...
+Presolve removed 12587 rows and 5760 columns (presolve time = 16s) ...
+Presolve removed 258647 rows and 5760 columns (presolve time = 20s) ...
+Presolve removed 264100 rows and 5760 columns (presolve time = 25s) ...
+Presolve removed 264100 rows and 5760 columns (presolve time = 30s) ...
+Presolve removed 264100 rows and 5760 columns (presolve time = 35s) ...
+Presolve removed 264100 rows and 5760 columns (presolve time = 40s) ...
+Presolve removed 264100 rows and 5760 columns
+Presolve time: 41.94s
+Presolved: 1694795 rows, 1659147 columns, 9901787 nonzeros
+Variable types: 287 continuous, 1658860 integer (1658860 binary)
+Found heuristic solution: objective 23522.000000
+
+Deterministic concurrent LP optimizer: dual simplex and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 3.60s
+
+Barrier statistics:
+ AA' NZ     : 1.247e+06
+ Factor NZ  : 5.008e+06 (roughly 230 MB of memory)
+ Factor Ops : 7.944e+09 (less than 1 second per iteration)
+ Threads    : 1
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.40395167e+09  0.00000000e+00  5.26e+03 0.00e+00  4.30e+03   107s
+   1   1.80803427e+08 -3.85888730e+06  4.09e+02 4.55e-13  3.48e+02   108s
+   2   3.18825169e+06 -1.99809825e+06  8.14e+00 6.82e-13  8.61e+00   109s
+   3   3.44398826e+05 -5.96096454e+05  1.00e+00 6.82e-13  1.50e+00   109s
+   4   3.18274542e+04 -1.30784710e+05  5.92e-02 6.82e-13  2.08e-01   110s
+   5   9.60710034e+03 -2.68322850e+04  8.99e-13 5.68e-13  4.18e-02   111s
+   6   6.26558137e+03 -7.80467186e+03  6.25e-13 4.55e-13  1.62e-02   112s
+   7   3.65094020e+03 -4.18141119e+03  9.13e-13 4.55e-13  8.99e-03   113s
+   8   2.81065304e+03 -2.11907014e+03  6.68e-13 4.55e-13  5.66e-03   114s
+   9   1.95896177e+03 -4.34119719e+02  8.31e-13 4.55e-13  2.75e-03   115s
+  10   1.45030853e+03  9.91412381e+01  6.11e-13 4.55e-13  1.55e-03   115s
+  11   1.07709627e+03  5.03026085e+02  9.66e-13 4.55e-13  6.59e-04   116s
+  12   8.02739259e+02  7.79742612e+02  9.20e-13 9.09e-13  2.64e-05   117s
+  13   7.90029628e+02  7.89967328e+02  8.74e-13 4.55e-13  7.15e-08   117s
+  14   7.90000030e+02  7.89999967e+02  3.13e-12 6.82e-13  7.15e-11   118s
+  15   7.90000000e+02  7.90000000e+02  3.55e-09 6.82e-13  1.58e-13   119s
+
+Barrier performed 15 iterations in 119.01 seconds (88.58 work units)
+Barrier solve interrupted - model solved by another algorithm
+
+Concurrent spin time: 0.06s
+
+Solved with dual simplex
+
+Root relaxation: objective 7.900000e+02, 16675 iterations, 27.31 seconds (12.63 work units)
+Total elapsed time = 142.05s
+Another try with MIP start
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  790.00000    0  812 23522.0000  790.00000  96.6%     -  176s
+H    0     0                    23189.000000  790.00000  96.6%     -  217s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 1
+  Implied bound: 224
+  Clique: 180
+  MIR: 690
+  StrongCG: 6
+  Zero half: 28
+  RLT: 293
+  Relax-and-lift: 11
+  BQP: 75
+  PSD: 187
+
+Explored 1 nodes (42681 simplex iterations) in 303.09 seconds (241.71 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 23189 23522 
+
+Time limit reached
+Best objective 2.318900000000e+04, best bound 7.900000000000e+02, gap 96.5932%
+Done waiting!
+MIP improvement: [[0, 198, 205, 111, 228, 40, 230, 19, 237, 11, 0], [0, 219, 227, 213, 268, 172, 269, 167, 287, 78, 0], [0, 1, 248, 255, 234, 258, 155, 261, 143, 282, 133, 0], [0, 90, 86, 127, 39, 158, 16, 182, 14, 209, 13, 0], [0, 194, 203, 179, 215, 147, 218, 136, 224, 82, 225, 64, 0], [0, 113, 93, 134, 51, 153, 45, 166, 23, 263, 22, 284, 7, 0], [0, 169, 164, 192, 138, 241, 121, 244, 103, 272, 95, 275, 54, 278, 26, 0], [0, 152, 131, 165, 129, 181, 96, 206, 80, 222, 77, 239, 73, 273, 236, 37, 243, 35, 251, 24, 12, 281, 4, 0], [0, 57, 171, 126, 190, 105, 216, 100, 217, 99, 231, 97, 235, 81, 238, 65, 249, 60, 252, 274, 271, 17, 0], [0, 139, 140, 115, 142, 114, 144, 109, 145, 107, 159, 104, 161, 98, 162, 94, 163, 88, 175, 84, 178, 72, 180, 71, 183, 69, 185, 68, 187, 66, 191, 63, 199, 62, 200, 61, 204, 59, 207, 52, 208, 47, 212, 46, 233, 42, 264, 21, 36, 18, 280, 10, 283, 9, 0], [0, 132, 117, 141, 108, 146, 102, 148, 101, 150, 85, 174, 79, 210, 76, 211, 75, 253, 53, 260, 43, 55, 276, 29, 0], [0, 125, 120, 189, 91, 201, 89, 223, 83, 229, 49, 247, 48, 259, 38, 262, 5, 0], [0, 168, 196, 157, 202, 123, 240, 122, 242, 56, 257, 25, 266, 285, 32, 0], [0, 184, 173, 112, 221, 92, 226, 58, 232, 44, 250, 3, 0], [0, 160, 137, 41, 67, 30, 74, 28, 87, 15, 254, 8, 0], [0, 116, 197, 193, 214, 188, 265, 177, 270, 6, 0], [0, 195, 118, 110, 128, 106, 151, 34, 277, 2, 0], [0, 119, 33, 245, 31, 279, 27, 286, 20, 0], [0, 220, 186, 246, 130, 256, 124, 267, 50, 0], [0, 154, 156, 149, 170, 135, 176, 70, 0]]
+MIP value: 24912
+The solution could be better...
